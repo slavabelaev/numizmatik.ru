@@ -1,0 +1,33 @@
+@import "bootstrap";
+@import "bootstrap_theme";
+@import "icons";
+
+@import "components/header";
+@import "components/footer";
+
+ul.row {
+	list-style: none;
+	padding: 0;
+}
+
+.list-of-figures {
+	li {
+		margin-bottom: 20px;
+	}
+}
+.figure {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	text-align: center;
+	border: 1px solid #efefef;
+	padding: 20px;
+	border-radius: 3px;
+}
+.figure [data-icon] {
+	height: 60px;
+	width: 60px;
+	margin-bottom: 28px;
+}

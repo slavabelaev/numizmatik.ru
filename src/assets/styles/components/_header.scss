@@ -1,0 +1,21 @@
+.contacts {
+	display: flex;
+	a {
+		display: block;
+		&[href^=tel] {
+			font-size: 1.5rem;
+		}
+	}
+	address,
+	time {
+		display: block;
+		font-weight: bold;
+	}
+}
+.list-of-contacts {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
