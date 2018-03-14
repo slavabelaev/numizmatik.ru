@@ -3,8 +3,9 @@
     vertical-align: middle;
     width: 24px;
     height: 24px;
-    background: 100% center no-repeat;
     background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 [data-icon="coins"] { background-image: url(../images/icons/coins.svg); }
 [data-icon="book"] { background-image: url(../images/icons/book.svg); }
@@ -23,7 +24,8 @@
 [data-icon="agreement"] { background-image: url(../images/icons/agreement.svg); }
 [data-icon="money"] { background-image: url(../images/icons/money.svg); }
 [data-icon="package"] { background-image: url(../images/icons/package.svg); }
-[data-icon=""] { background-image: url(../images/icons/.svg); }
-[data-icon=""] { background-image: url(../images/icons/.svg); }
-[data-icon=""] { background-image: url(../images/icons/.svg); }
+
+[data-icon="_location"] { background-image: url(../images/icons/_location.svg); }
+[data-icon="_time"] { background-image: url(../images/icons/_time.svg); }
+[data-icon="_telephone"] { background-image: url(../images/icons/_telephone.svg); }
 [data-icon=""] { background-image: url(../images/icons/.svg); }

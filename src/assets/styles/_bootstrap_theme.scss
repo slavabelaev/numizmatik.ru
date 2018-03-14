@@ -1,0 +1,86 @@
+@import "bootstrap";
+
+h1 {
+	margin-bottom: 4.125rem;
+	font-weight: 400;
+	font-size: 2.875rem
+}
+
+[class*="text-"] {
+	h1, h2, h3, h4, h5, h6 {
+		color: inherit;
+	}
+}
+
+.bg-dark {	
+	background-color: #333e8f;
+}
+
+.btn-orange {
+	background-color: $orange;
+	color: #fff;
+	border-bottom: 2px solid darken($orange, 15%);
+	&:focus,
+	&:hover {
+		background-color: darken($orange, 10%);
+		color: #fff;
+	}
+	&:active {
+		background-color: darken($orange, 15%);
+		color: #fff;
+	}
+}
+
+.lead {
+	font-weight: 400;
+}
+
+.card {
+	color: #000;
+	&:after,
+	&:before {
+	    content: "";
+	    position: absolute;
+	    display: block;
+	    width: calc(50% + 2px);
+	    bottom: -13px;
+	    height: 25px;
+	    background: inherit;
+	    border-bottom: .375rem solid #df934f;
+	    border-radius: 3px;
+	    box-shadow: rgba(0,0,0,.4) 0 10px 12px -7px
+	}
+	&:before {
+	    left: 0;
+	    transform: skew(0deg,5deg);
+	}
+	&:after {
+	    right: 0;
+	    transform: skew(0deg,-5deg);
+	}
+}
+
+ul.row {
+	list-style: none;
+	padding: 0;
+}
+
+.figure {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	text-align: center;
+	border: 1px solid #efefef;
+	padding: 20px;
+	border-radius: 3px;
+	padding-top: 2.25rem;
+	[data-icon] {
+		height: 60px;
+		width: 60px;
+		margin-bottom: 28px;
+	}
+	.figure-caption {
+		font-size: .9375rem;
+	}
+}

@@ -1,14 +1,130 @@
 section {
-	header {
-		text-align: center;
-	}
-
-	h2 {
-		color: #333e8f;
-	}
-
+	padding-top: 4.125rem;
+	padding-bottom: 4.125rem;
+	background-size: cover;
+	background-position: center;
+	header,
 	h1,
 	h2 {
 		text-align: center;
 	}
+
+	&>.container {
+		&>header {
+			margin-bottom: 55px;
+		}
+		&>:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.feedback {
+	min-width: 380px;
+	text-align: center;
+	color: #7d661b;
+	h3 {
+		margin-bottom: 1rem;
+		color: initial;
+	}
+	.description {
+	}
+	footer {
+		opacity: .5;
+		margin-top: 1rem;
+	}
+}
+
+#owners-of-bookstores {
+	background-image: url(../../images/pages/index/owners-of-bookstores.png);
+}
+
+#remember {
+	.guarantee {
+		display: flex;
+		align-items: center;
+		margin-bottom: 0;
+		[data-icon] {
+			min-width: 200px;
+			min-height: 200px;
+			margin-right: 4.125rem;
+		}
+
+		h2 {
+			color: initial;
+			text-align: initial;
+		}
+		.lead {
+			p {
+				font-weight: 500;
+			}
+			:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+#simple-solution {
+	background-image: url(../../images/pages/index/simple-solution.png);
+}
+
+#how-much-is {
+	border-bottom: #efefef 1px solid;
+}
+
+#what-should-be-done {
+	.list-of-figures {
+		li {
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				right: -30px;
+				top: 0;
+				bottom: 0;
+				width: 60px;
+				height: 60px;
+				margin: auto;
+				background-color: #fff;
+				border-radius: 50%;
+				border: 1px solid #efefef;
+				z-index: 1;
+				background-image: url(../../images/icons/_right-arrow.svg);
+				background-repeat: no-repeat;
+				background-size: 30px;
+				background-position: center;
+			}
+			&:nth-child(4) {
+				.figure-caption {
+					font-size: .9275rem;
+				}
+				&:before {
+					left: 0;
+					right: 0;
+					top: initial;
+					bottom: -40px;
+					transform: rotate(90deg);
+				}
+			}
+			&:nth-child(n+5):before {
+				right: initial;
+				left: -30px;
+				transform: rotate(180deg);
+			}
+			&:nth-child(5) {
+				.figure {
+					justify-content: center;
+					padding: 1.25rem;
+				}
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+#offer-is-limited {
+	background-image: url(../../images/pages/index/offer-is-limited.png);
 }

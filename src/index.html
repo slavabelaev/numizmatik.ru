@@ -15,36 +15,36 @@
 </head>
 
 <body>
-	
-	<div class="container">
-		<header id="header" class="contacts">
+	<!-- Header -->
+	<header id="header">
+		<div class="container contacts">
 			<figure class="logo">
-				<a href="#"><img src="assets/images/logo.svg" alt="Клуб НУМИЗМАТ"></a>
-				<figcaption class="logo__description">Бесплатная оценка и скупка монет в Москве и МО</figcaption>
+				<a href="#"><img src="assets/images/logo.png" alt="Клуб НУМИЗМАТ"></a>
+				<figcaption class="logo__description">Бесплатная оценка и скупка <br>монет в Москве и МО</figcaption>
 			</figure>
 			<ul class="list-of-contacts">
-				<li class="col-sm-6 col-md-4">
+				<li>
 					<figure class="contact">
-						<i data-icon="map"></i>
+						<i data-icon="_location"></i>
 						<figcaption>
-							Салон-магазин Клуб Нумизмат
+							<span class="text-nowrap">Салон-магазин Клуб Нумизмат</span>
 							<a target="_blank" href="#"><address>Москва, ул.Тверская 12, стр.8</address></a>
 						</figcaption>
 					</figure>
 				</li>
-				<li class="col-sm-6 col-md-4">
+				<li>
 					<figure class="contact">
-						<i data-icon="time"></i>
+						<i data-icon="_time"></i>
 						<figcaption>
-							Режим работы оценщика:
-							<time>пн-пт: 9:00-19:00</time>
-							<time>сб-вс: 10:00-18:00</time>
+							<span class="text-nowrap">Режим работы оценщика:</span>
+							<time class="text-primary">пн-пт: 9:00-19:00</time>
+							<time class="text-primary">сб-вс: 10:00-18:00</time>
 						</figcaption>
 					</figure>
 				</li>
-				<li class="col-sm-6 col-md-4">
+				<li>
 					<figure class="contact">
-						<i data-icon="phone"></i>
+						<i data-icon="_telephone"></i>
 						<figcaption>
 							<a href="tel:+88003331477">+8-800-333-14-77</a>
 							<a href="tel:+79030060044">+7-903-006-00-44</a>
@@ -52,28 +52,37 @@
 					</figure>
 				</li>
 			</ul>
-		</header>
-		<main id="main">
-			<section id="">
-				<h1>Внимание всем <span class="text-primary">владельцам книжных магазинов</span>!<br>“Клуб Нумизмат” предлагает увеличить продажи с минимальными вложениями!</h1>
-				<div class="lead">
-					<p>Достаточно открыть отдел с монетами в вашем магазине и убедиться в его эффективности в кратчайшие сроки. Если что-то пойдет не так – мы вернем вам деньги!</p>
-					<p>Зарабатывать на продажах монет – просто, выгодно и невероятно интересно!</p>
-					<p class="text-primary">Подобный шанс нельзя игнорировать.</p>
-				</div>
-				<form class="feedback" action="#">
-					<header>
-						<h3>Интересно?</h3>
-						<div class="description">Оставьте Ваш номер телефона и <br>мы расскажем всё подробно!</div>
-					</header>
-					<div class="input-group">
-						<input type="phone" class="form-control" placeholder="Введите Ваш телефон">
+		</div>
+	</header>
+	<!-- /Header -->
+
+	<!-- Main -->
+	<main id="main">
+		<section id="owners-of-bookstores" class="bg-dark text-white">
+			<div class="container">
+				<h1>Внимание всем <span class="text-warning">владельцам книжных магазинов</span>!<br>“Клуб Нумизмат” предлагает увеличить продажи с минимальными вложениями!</h1>
+				<div class="d-flex">
+					<div class="lead">
+						<p>Достаточно открыть отдел с монетами в вашем магазине и убедиться в его эффективности в кратчайшие сроки. Если что-то пойдет не так – мы вернем вам деньги!</p>
+						<p>Зарабатывать на продажах монет – просто, выгодно и невероятно интересно!</p>
+						<p class="text-warning">Подобный шанс нельзя игнорировать.</p>
 					</div>
-					<button type="submit" class="btn btn-primary w-100">Свяжитесь со мной!</button>
-					<footer>Сегодня написали 7 человек</footer>
-				</form>
-			</section>
-			<section id="">
+					<form class="card card-body feedback" action="#">
+						<header>
+							<h3>Интересно?</h3>
+							<p class="description">Оставьте Ваш номер телефона и <br>мы расскажем всё подробно!</p>
+						</header>
+						<div class="form-group">
+							<input type="phone" class="form-control" placeholder="Введите Ваш телефон">
+						</div>
+						<button type="submit" class="btn btn-orange w-100">Свяжитесь со мной!</button>
+						<footer>Сегодня написали 7 человек</footer>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section id="why">
+			<div class="container">
 				<header>
 					<h2>Почему?</h2>
 					<p class="lead text-primary">Нумизматика – это не только модно, но и прибыльно.</p>
@@ -82,47 +91,55 @@
 					<li class="col-sm-4">
 						<figure class="figure">
 							<i data-icon="coins"></i>
-							<figcaption class="figure-caption">1 из 100 человек в России собирает монеты</figcaption>
+							<figcaption class="figure-caption">1 из 100 человек в России <br>собирает монеты</figcaption>
 						</figure>
 					</li>
 					<li class="col-sm-4">
 						<figure class="figure">
 							<i data-icon="book"></i>
-							<figcaption class="figure-caption">Каждый второй из них читает книги</figcaption>
+							<figcaption class="figure-caption">Каждый второй из них <br>читает книги</figcaption>
 						</figure>
 					</li>
 					<li class="col-sm-4">
 						<figure class="figure">
 							<i data-icon="stats"></i>
-							<figcaption class="figure-caption">Каждый год в России становиться на 32.754 нумизматов больше</figcaption>
+							<figcaption class="figure-caption">Каждый год в России становиться на <br>32.754 нумизматов больше</figcaption>
 						</figure>
 					</li>
 				</ul>
-			</section>
-			<section id="">
+			</div>
+		</section>
+		<section id="fear-of-failure" class="bg-light">
+			<div class="container">
 				<h2>Страх неудачи</h2>
-				<p>Вы все еще сомневаетесь? Вам страшно покорять новые вершины? В этом нет вашей вины. Сейчас, во время кризиса, каждый второй не хочет расставаться со своими кровно заработанными деньгами, но хочет их преувеличить <b class="text-primary">без страха и риска</b></p>
-			</section>
-			<section id="">
+				<p class="text-center">Вы все еще сомневаетесь? Вам страшно покорять новые вершины? В этом нет вашей вины. Сейчас, во время кризиса, каждый второй не хочет расставаться со своими кровно заработанными деньгами, но хочет их преувеличить <b class="text-primary">без страха и риска</b></p>
+			</div>
+		</section>
+		<section id="simple-solution" class="bg-dark text-white">
+			<div class="container">
 				<h2>У нас на это есть простое решение!</h2>
-				<div class="lead">
-					<p><span class="text-primary">Нумизматический отдел в вашем книжном магазине.</span> Именно он поможет вам увеличить поток клиентов за счет разнообразия товаров. Подумайте только: к вашим многомиллионными клиентам-книголюбам добавиться не менее многочисленная аудитория нумизматов!</p>
-					<p>Оставив заявку сегодня, уже завтра мы сможем сделать вам уникальное предложение. <span class="text-primary">С нашим ассортиментом и ценами не сможет конкурировать ни один магазин в сфере Нумизматики!</span></p>
-					<p></p>
-				</div>
-				<form class="feedback" action="#">
-					<header>
-						<h3>Интересно?</h3>
-						<div class="description">Оставьте Ваш номер телефона и <br>мы расскажем всё подробно!</div>
-					</header>
-					<div class="input-group">
-						<input type="phone" class="form-control" placeholder="Введите Ваш телефон">
+				<div class="d-flex">
+					<div class="lead">
+						<p><span class="text-warning">Нумизматический отдел в вашем книжном магазине.</span> Именно он поможет вам увеличить поток клиентов за счет разнообразия товаров. Подумайте только: к вашим многомиллионными клиентам-книголюбам добавиться не менее многочисленная аудитория нумизматов!</p>
+						<p>Оставив заявку сегодня, уже завтра мы сможем сделать вам уникальное предложение. <span class="text-warning">С нашим ассортиментом и ценами не сможет конкурировать ни один магазин в сфере Нумизматики!</span></p>
+						<p></p>
 					</div>
-					<button type="submit" class="btn btn-primary w-100">Свяжитесь со мной!</button>
-					<footer>Сегодня написали 7 человек</footer>
-				</form>
-			</section>
-			<section id="">
+					<form class="card card-body feedback" action="#">
+						<header>
+							<h3>Интересно?</h3>
+							<p class="description">Оставьте Ваш номер телефона и <br>мы расскажем всё подробно!</p>
+						</header>
+						<div class="form-group">
+							<input type="phone" class="form-control" placeholder="Введите Ваш телефон">
+						</div>
+						<button type="submit" class="btn btn-orange w-100">Свяжитесь со мной!</button>
+						<footer>Сегодня написали 7 человек</footer>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section id="benefits-of-cooperation">
+			<div class="container">
 				<header>
 					<h2>Преимущества сотрудничества с нами</h2>
 					<p>«Клуб Нумизмат» - лидер на рынке с 2001 года, наш ассортимент насчитывает более 135.000 монет, банкнот и аксессуаров. <br>А три профессиональных эксперта ни за что не пропустят Фальшивку на прилавок.</p>
@@ -131,43 +148,45 @@
 					<li class="col-sm-4">
 						<figure class="figure">
 							<i data-icon="list"></i>
-							<figcaption class="figure-caption">Два альбома с наиболее ходовыми монетами (500 наименований!)</figcaption>
+							<figcaption class="figure-caption">Два альбома с наиболее ходовыми <br>монетами (500 наименований!)</figcaption>
 						</figure>
 					</li>
 					<li class="col-sm-4">
 						<figure class="figure">
 							<i data-icon="information"></i>
-							<figcaption class="figure-caption">Детальное описание каждой монеты</figcaption>
+							<figcaption class="figure-caption">Детальное описание <br>каждой монеты</figcaption>
 						</figure>
 					</li>
 					<li class="col-sm-4">
 						<figure class="figure">
 							<i data-icon="support"></i>
-							<figcaption class="figure-caption">Помощь эксперта 7 дней в неделю!</figcaption>
+							<figcaption class="figure-caption">Помощь эксперта <br>7 дней в неделю!</figcaption>
 						</figure>
 					</li>
 					<li class="col-sm-4">
 						<figure class="figure">
 							<i data-icon="add"></i>
-							<figcaption class="figure-caption">Быстрое пополнение проданных позиций в один клик.</figcaption>
+							<figcaption class="figure-caption">Быстрое пополнение проданных <br>позиций в один клик.</figcaption>
 						</figure>
 					</li>
 					<li class="col-sm-4">
 						<figure class="figure">
 							<i data-icon="discount"></i>
-							<figcaption class="figure-caption">10% скидка на все товары!</figcaption>
+							<figcaption class="figure-caption">10% скидка <br>на все товары!</figcaption>
 						</figure>
 					</li>
 					<li class="col-sm-4">
 						<figure class="figure">
 							<i data-icon="excel-file"></i>
-							<figcaption class="figure-caption">Excel-файл для интеграции в бухгалтерию</figcaption>
+							<figcaption class="figure-caption">Excel-файл для интеграции <br>в бухгалтерию</figcaption>
 						</figure>
 					</li>
 				</ul>
-			</section>
-			<section id="">
-				<figure>
+			</div>
+		</section>
+		<section id="remember" class="bg-warning">
+			<div class="container">
+				<figure class="guarantee">
 					<i data-icon="guarantee"></i>
 					<figcaption>
 						<h2>Помните!</h2>
@@ -177,18 +196,22 @@
 						</div>
 					</figcaption>
 				</figure>
-			</section>
-			<section id="">
+			</div>
+		</section>
+		<section id="how-much-is">
+			<div class="container">
 				<h2>Сколько стоит создать нумизматический отдел?</h2>
-				<p class="lead">Все разумно - зависит от ассортимента, который вы хотите запустить. <br>При количестве ходовых монет 500 штук – около 20 тысяч рублей.</p>
-			</section>
-			<section id="">
+				<p class="lead text-primary text-center">Все разумно - зависит от ассортимента, который вы хотите запустить. <br>При количестве ходовых монет 500 штук – около 20 тысяч рублей.</p>
+			</div>
+		</section>
+		<section id="what-should-be-done">
+			<div class="container">
 				<h2>Что нужно сделать?</h2>
-				<ul class="list-of-figures row">
+				<ul class="row list-of-figures">
 					<li class="col-sm-6 col-md-4 col-xl-3">
 						<figure class="figure">
 							<i data-icon="request"></i>
-							<figcaption class="figure-caption">Вы оставляете заявку</figcaption>
+							<figcaption class="figure-caption">Вы оставляете <br>заявку</figcaption>
 						</figure>
 					</li>
 					<li class="col-sm-6 col-md-4 col-xl-3">
@@ -200,7 +223,7 @@
 					<li class="col-sm-6 col-md-4 col-xl-3">
 						<figure class="figure">
 							<i data-icon="message"></i>
-							<figcaption class="figure-caption">Узнаём ваши пожелания</figcaption>
+							<figcaption class="figure-caption">Узнаём ваши <br>пожелания</figcaption>
 						</figure>
 					</li>
 					<li class="col-sm-6 col-md-4 col-xl-3">
@@ -211,14 +234,7 @@
 					</li>
 					<li class="col-sm-6 col-md-4 col-xl-3">
 						<figure class="figure">
-							<i data-icon="agreement"></i>
-							<figcaption class="figure-caption">Заключаем договор</figcaption>
-						</figure>
-					</li>
-					<li class="col-sm-6 col-md-4 col-xl-3">
-						<figure class="figure">
-							<i data-icon="money"></i>
-							<figcaption class="figure-caption">Вы переводите денежные средства на расчётный счет</figcaption>
+							<a href="#" class="btn btn-orange">Оставить заявку</a>
 						</figure>
 					</li>
 					<li class="col-sm-6 col-md-4 col-xl-3">
@@ -229,42 +245,95 @@
 					</li>
 					<li class="col-sm-6 col-md-4 col-xl-3">
 						<figure class="figure">
-							<a href="#" class="btn btn-primary">Оставить заявку</a>
+							<i data-icon="money"></i>
+							<figcaption class="figure-caption">Вы переводите денежные средства на расчётный счет</figcaption>
+						</figure>
+					</li>
+					<li class="col-sm-6 col-md-4 col-xl-3">
+						<figure class="figure">
+							<i data-icon="agreement"></i>
+							<figcaption class="figure-caption">Заключаем <br>договор</figcaption>
 						</figure>
 					</li>
 				</ul>
-			</section>
-			<section id="">
+			</div>
+		</section>
+		<section id="that-is-not-all" class="bg-light">
+			<div class="container">
 				<h2>Но это ещё не всё!</h2>
-				<p>Каждую неделю мы созваниваемся с вами с вопросом – Как дела? Мы сами заинтересованы в ваших продажах и вашем росте. <br>Каждый месяц вы будете получать рекомендации для дальнейшего пополнения ассортимента</p>
-			</section>
-			<section id="">
+				<p class="text-center">Каждую неделю мы созваниваемся с вами с вопросом – Как дела? Мы сами заинтересованы в ваших продажах и вашем росте. <br>Каждый месяц вы будете получать рекомендации для дальнейшего пополнения ассортимента</p>
+			</div>
+		</section>
+		<section id="offer-is-limited" class="bg-dark text-white">
+			<div class="container">
 				<h2>Спешите, предложение ограничено!</h2>
-				<div class="lead">
-					<p>Клуб Нумизмат работает с 2001 года и зарекомендовал себя как надежный партнер на рынке коллекционирования. Качественно и оперативно - именно так мы работаем. Поэтому набираем на текущий год не более 100 магазинов! Возможно, уже завтра такой нумизматический отдел создаст ваш конкурент, и тогда прибыль будет попадать в «чужой карман».</p>
-					<p class="text-primary">Прими решение уже сейчас, заполнив форму справа!</p>
-				</div>
-				<form class="feedback" action="#">
-					<header>
-						<h3>Интересно?</h3>
-						<div class="description">Оставьте Ваш номер телефона и <br>мы расскажем всё подробно!</div>
-					</header>
-					<div class="input-group">
-						<input type="phone" class="form-control" placeholder="Введите Ваш телефон">
+				<div class="d-flex">
+					<div class="lead">
+						<p>Клуб Нумизмат работает с 2001 года и зарекомендовал себя как надежный партнер на рынке коллекционирования. Качественно и оперативно - именно так мы работаем. Поэтому набираем на текущий год не более 100 магазинов! Возможно, уже завтра такой нумизматический отдел создаст ваш конкурент, и тогда прибыль будет попадать в «чужой карман».</p>
+						<p class="text-warning">Прими решение уже сейчас, заполнив форму справа!</p>
 					</div>
-					<button type="submit" class="btn btn-primary w-100">Свяжитесь со мной!</button>
-					<footer>Сегодня написали 7 человек</footer>
-				</form>
-			</section>
-		</main>
-		<footer id="footer">
-			<ul class="list-of-requisites">
-				<li>2001-2016 Клуб Нумизмат</li>
-				<li>ИНН:504908219824</li>
-				<li>ОГРН:309504726100042</li>
+					<form class="card card-body feedback" action="#">
+						<header>
+							<h3>Интересно?</h3>
+							<p class="description">Оставьте Ваш номер телефона и <br>мы расскажем всё подробно!</p>
+						</header>
+						<div class="form-group">
+							<input type="phone" class="form-control" placeholder="Введите Ваш телефон">
+						</div>
+						<button type="submit" class="btn btn-orange w-100">Свяжитесь со мной!</button>
+						<footer>Сегодня написали 7 человек</footer>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- /Main -->
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="container contacts">
+			<figure class="logo">
+				<a href="#"><img src="assets/images/logo.png" alt="Клуб НУМИЗМАТ"></a>
+				<figcaption class="logo__description">Бесплатная оценка и скупка <br>монет в Москве и МО</figcaption>
+			</figure>
+			<ul class="list-of-contacts">
+				<li>
+					<figure class="contact">
+						<i data-icon="_location"></i>
+						<figcaption>
+							<span class="text-nowrap">Салон-магазин Клуб Нумизмат</span>
+							<a target="_blank" href="#"><address>Москва, ул.Тверская 12, стр.8</address></a>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure class="contact">
+						<i data-icon="_time"></i>
+						<figcaption>
+							<span class="text-nowrap">Режим работы оценщика:</span>
+							<time class="text-primary">пн-пт: 9:00-19:00</time>
+							<time class="text-primary">сб-вс: 10:00-18:00</time>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure class="contact">
+						<i data-icon="_telephone"></i>
+						<figcaption>
+							<a href="tel:+88003331477">+8-800-333-14-77</a>
+							<a href="tel:+79030060044">+7-903-006-00-44</a>
+						</figcaption>
+					</figure>
+				</li>
 			</ul>
-		</footer>
-	</div>
+		</div>
+		<ul class="list-of-requisites">
+			<li>2001-2016 Клуб Нумизмат</li>
+			<li>ИНН:504908219824</li>
+			<li>ОГРН:309504726100042</li>
+		</ul>
+	</footer>
+	<!-- /Footer -->
 
 	<!-- Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

@@ -1,15 +1,21 @@
 .contacts {
 	display: flex;
+	align-items: center;
+	min-height: 180px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #7f7f7f;
 	a {
 		display: block;
 		&[href^=tel] {
 			font-size: 1.5rem;
+			font-weight: 600;
 		}
 	}
 	address,
 	time {
 		display: block;
-		font-weight: bold;
+		font-weight: 600;
 	}
 }
 .list-of-contacts {
@@ -18,4 +24,37 @@
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+	margin-bottom: 0;
+	.contact {
+		display: flex;
+		margin-bottom: 0;
+		[data-icon] {
+			min-width: 40px;
+			min-height: 40px;
+			margin-right: 20px;
+			border: #efefef 1px solid;
+			border-radius: 50%;
+			background-size: 20px;
+		}
+	}
+}
+
+.logo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: .875rem;
+	font-weight: 600;
+	margin-bottom: 0;
+	img {
+		margin-bottom: .75rem;
+	}
+}
+
+@media (min-width: 560px) {
+	.logo {
+		margin-right: 3rem;
+	}
 }
