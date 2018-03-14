@@ -1,23 +1,30 @@
 .contacts {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	min-height: 180px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	color: #7f7f7f;
-	a {
-		display: block;
-		&[href^=tel] {
-			font-size: 1.5rem;
-			font-weight: 600;
-		}
-	}
 	address,
 	time {
 		display: block;
 		font-weight: 600;
 	}
+	.telephones {
+		figcaption {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+		}
+		a {
+			font-size: 1.5rem;
+			font-weight: 600;
+			min-width: 50%;
+		}
+	}
 }
+
 .list-of-contacts {
 	list-style: none;
 	padding: 0;
@@ -27,7 +34,6 @@
 	margin-bottom: 0;
 	.contact {
 		display: flex;
-		margin-bottom: 0;
 		[data-icon] {
 			min-width: 40px;
 			min-height: 40px;
@@ -48,13 +54,21 @@
 	font-size: .875rem;
 	font-weight: 600;
 	margin-bottom: 0;
+	text-align: center;
 	img {
 		margin-bottom: .75rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.contact {
+		margin-bottom: 0;
 	}
 }
 
 @media (min-width: 560px) {
 	.logo {
 		margin-right: 3rem;
+		text-align: left;
 	}
 }
