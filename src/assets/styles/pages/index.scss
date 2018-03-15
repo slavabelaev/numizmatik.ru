@@ -42,21 +42,17 @@ section {
 	}
 }
 
-#owners-of-bookstores {
+.bg-dark {
 	position: relative;
-	overflow-x: hidden;
-	background-image: url(../../images/pages/index/backgrounds/owners-of-bookstores.png);
-	background-size: cover;
-	background-position: center;
+	overflow: hidden;
 	&:before {
-		//content: "";
+		content: "";
 		display: block;
 		position: absolute;
 		left: 0;
 		right: 0;
 		top: 0;
 		bottom: 0;
-		min-width: 1920px;
 		margin: auto;
 	    filter: drop-shadow(5px 5px 10px rgba(0,0,0,.5));
 		background-image: 
@@ -80,18 +76,25 @@ section {
 			160px,
 			180px;
 		background-position:
-			250px -25px,
-			70px 90px,
-			160px 215px,
-			-30px 110%,
+			-100% -5%,
+			-120% 20%,
+			-140% 50%,
+			-160% 125%,
 
-			1600px 30px,
-			1560px 220px,
-			1800px 220px,
-			1510px 105%;
+			160% 5%,
+			180% 50%, 
+			200% 80%,
+			220% 110%;
 		background-repeat: no-repeat;
-		//animation: coinLight 12s infinite;
+		transition: 1s;
+		animation: coinLight 12s infinite;
 	}
+}
+
+#owners-of-bookstores {
+	background-image: url(../../images/pages/index/backgrounds/owners-of-bookstores.png);
+	background-size: cover;
+	background-position: center;
 }
 
 #remember {
@@ -145,7 +148,7 @@ section {
 				width: 60px;
 				height: 60px;
 				margin: auto;
-				background-color: #fff;
+				background-color: #fefefe;
 				border-radius: 50%;
 				border: 1px solid #efefef;
 				z-index: 1;
@@ -154,7 +157,7 @@ section {
 				background-size: 30px;
 				background-position: center;
 				transform: rotate(90deg);
-				animation: backgroundColor #{$countElements}s infinite;
+				transition: 1s ease;
 			}
 			&:last-child {
 				&:before {
@@ -315,6 +318,9 @@ section {
 
 @media (max-width: 767px) {
 	.list-of-figures {
+		li[data-aos] {
+			animation: none!important;
+		}
 		.figure {
 			flex-direction: row;
 			justify-content: flex-start;
@@ -334,21 +340,152 @@ section {
 	}
 }
 
+@media (min-width: 1440px) {
+	.bg-dark {
+		&:before {
+			background-size: 
+				100px,
+				80px,
+				120px,
+				200px,
 
-@keyframes backgroundColor {
-	0% { 
-		background-color: #fff;
-		border-color: #efefef;
-		filter: initial;
+				100px,
+				100px,
+				140px,
+				150px;
+			background-position:
+				10% -8%,
+				-4% 20%,
+				4% 40%,
+				-5% 125%,
+
+				98% 10%,
+				92% 50%, 
+				109% 80%,
+				96% 110%;
+		}
 	}
-	10% { 
-		background-color: var(--orange);
-		border-color: transparent;
-		filter: brightness(1.5);
+	#simple-solution.bg-dark {
+		&:before {
+			background-size: 
+				100px,
+				75px,
+				160px,
+				220px,
+
+				110px,
+				120px,
+				160px,
+				180px;
+			background-position:
+				2% 10%,
+				5% 60%,
+				160px 125%,
+				-50% 110%,
+
+				98% 90%,
+				105% 15%, 
+				92% 10%,
+				120% 105%;
+		}
 	}
-	20% { 
-		background-color: #fff; 
-		border-color: #efefef;
-		filter: initial;
+	#offer-is-limited.bg-dark {
+		&:before {
+			background-size: 
+				100px,
+				80px,
+				160px,
+				220px,
+
+				110px,
+				120px,
+				160px,
+				180px;
+			background-position:
+				-50% 10%,
+				6% 2%,
+				-5% 50%,
+				5% 160%,
+
+				150% 80%,
+				85% 40%, 
+				100% 10%,
+				96% 115%;
+		}
+	}
+}
+
+@media (min-width: 1920px) {
+	.bg-dark {
+		&:before {
+			background-size: 
+				100px,
+				80px,
+				160px,
+				220px,
+
+				110px,
+				120px,
+				160px,
+				180px;
+			background-position:
+				20% -25px,
+				70px 90px,
+				160px 215px,
+				-30px 110%,
+
+				90% 30px,
+				88% 220px, 
+				102% 220px,
+				86% 105%;
+		}
+	}
+	#simple-solution.bg-dark {
+		&:before {
+			background-size: 
+				100px,
+				75px,
+				160px,
+				220px,
+
+				110px,
+				120px,
+				160px,
+				180px;
+			background-position:
+				2% 10%,
+				5% 90%,
+				160px 50%,
+				-50% 110%,
+
+				90% 80%,
+				98% 15%, 
+				85% 10%,
+				120% 105%;
+		}
+	}
+	#offer-is-limited.bg-dark {
+		&:before {
+			background-size: 
+				100px,
+				80px,
+				160px,
+				220px,
+
+				110px,
+				120px,
+				160px,
+				180px;
+			background-position:
+				-50% 10%,
+				2% 20%,
+				9% 50%,
+				5% 145%,
+
+				150% 80%,
+				85% 40%, 
+				98% 10%,
+				102% 108%;
+		}
 	}
 }

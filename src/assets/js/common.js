@@ -1,1 +1,3 @@
-feather.replace();
+window.onload = function() {
+	AOS.init();
+}

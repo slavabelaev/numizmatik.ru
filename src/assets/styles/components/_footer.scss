@@ -19,10 +19,26 @@
 	}
 }
 
-@media (min-width: 576px) {
+@media (min-width: 575px) {
 	.list-of-requisites {
 		li {
 			padding: 1rem 0;
+		}
+	}
+}
+
+@media (min-width: 321px) and (max-width: 574px) {
+	.list-of-requisites {
+		li:nth-child(2):after {
+			content: " ";
+		}
+	}
+}
+
+@media (max-width: 320px) {
+	.list-of-requisites {
+		li:nth-child(1):after {
+			content: " ";
 		}
 	}
 }
