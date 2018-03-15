@@ -12,28 +12,6 @@ h1 {
 	}
 }
 
-.bg-dark {	
-	background-color: #333e8f;
-}
-
-.btn-orange {
-	background-color: $orange;
-	color: #fff;
-	border-bottom: 2px solid darken($orange, 15%);
-	&:focus,
-	&:hover {
-		background-color: darken($orange, 10%);
-		color: #fff;
-	}
-	&:active {
-		background-color: darken($orange, 15%);
-		color: #fff;
-	}
-}
-
-.lead {
-	font-weight: 400;
-}
 
 .card {
 	color: #000;
@@ -60,6 +38,33 @@ h1 {
 	}
 }
 
+.bg-dark {	
+	background-color: #333e8f;
+}
+
+.btn-orange {
+	background-color: $orange;
+	color: #fff;
+	border-bottom: 2px solid darken($orange, 15%);
+	&:focus,
+	&:hover {
+		background-color: darken($orange, 10%);
+		color: #fff;
+	}
+	&:active {
+		background-color: darken($orange, 15%);
+		color: #fff;
+	}
+}
+
+.lead {
+	font-weight: 400;
+}
+
+.card {
+	color: #000;
+}
+
 ul.row {
 	list-style: none;
 	padding: 0;
@@ -82,5 +87,21 @@ ul.row {
 	}
 	.figure-caption {
 		font-size: .9375rem;
+	}
+}
+
+@media (min-width: 768px) {
+}
+
+@media (max-width: 767px) {
+	h1 { 
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	}
+	h2 {
+		font-size: 1.8rem;
+	}
+	h3 {
+		font-size: 1.6rem;
 	}
 }

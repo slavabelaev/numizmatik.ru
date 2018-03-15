@@ -10,6 +10,7 @@
 	time {
 		display: block;
 		font-weight: 600;
+		margin-bottom: 0;
 	}
 	.telephones {
 		figcaption {
@@ -18,9 +19,11 @@
 			width: 100%;
 		}
 		a {
+			display: block;
 			font-size: 1.5rem;
 			font-weight: 600;
-			min-width: 50%;
+			flex: 1 50%;
+			white-space: nowrap;
 		}
 	}
 }
@@ -34,6 +37,9 @@
 	margin-bottom: 0;
 	.contact {
 		display: flex;
+		&.telephones {
+			margin-bottom: 0;
+		}
 		[data-icon] {
 			min-width: 40px;
 			min-height: 40px;
@@ -47,28 +53,41 @@
 
 .logo {
 	display: flex;
+	flex: 1;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	font-size: .875rem;
 	font-weight: 600;
-	margin-bottom: 0;
 	text-align: center;
 	img {
 		margin-bottom: .75rem;
 	}
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
 	.contact {
 		margin-bottom: 0;
 	}
 }
+@media (min-width: 992px) {
+	.contacts {
+		flex-wrap: nowrap;
+	}
+	.logo {
+		margin-bottom: 0;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.logo {
+	}
+}
+@media (min-width: 768px) {
 
+}
 @media (min-width: 560px) {
 	.logo {
 		margin-right: 3rem;
-		text-align: left;
 	}
 }

@@ -9,12 +9,20 @@
 	border-top: #efefef 1px solid;
 
 	li {
-		padding: 1rem 0;
+		padding: .5rem 0;
 		color: #a3a3a3;
 		font-size: .875rem;
 		&:not(:last-child):after {
 			content: "/";
 			margin: 0 .5rem;
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.list-of-requisites {
+		li {
+			padding: 1rem 0;
 		}
 	}
 }
