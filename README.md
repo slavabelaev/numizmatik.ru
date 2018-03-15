@@ -1,2 +1,3 @@
-# _mockup
-Mockup for project with HTML, CSS, JS
+numizmatik.ru Landing Page
+
+DEMO — https://belaevslava.github.io/numizmatik.ru/build/
