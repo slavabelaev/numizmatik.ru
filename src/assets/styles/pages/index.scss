@@ -17,6 +17,9 @@ section {
 		&>:last-child {
 			margin-bottom: 0;
 		}
+		.list-of-figures {
+			margin-bottom: -1rem;
+		}
 	}
 }
 
@@ -186,6 +189,9 @@ section {
 					transform: initial;
 				}
 				&:nth-child(4) {
+					.figure-caption {
+						font-size: .9275rem;
+					}
 					&:before {
 						left: 0;
 						right: 0;
@@ -198,6 +204,12 @@ section {
 				&:nth-child(6) { order: 3 }
 				&:nth-child(7) { order: 2 }
 				&:nth-child(8) { order: 1 }
+
+				&:nth-child(n+5):before {
+					right: initial;
+					left: -30px;
+					transform: rotate(180deg);
+				}
 			}
 		}
 	}
@@ -208,6 +220,76 @@ section {
 		.row {
 			.lead {
 				padding-right: 100px;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	#what-should-be-done {
+		.list-of-figures {
+			li {
+				&:before {
+					top: 0;
+					bottom: 0;
+					left: initial;
+					right: -30px;
+					transform: initial;
+				}
+				&:nth-child(4):before,
+				&:nth-child(5):before {
+					right: initial;
+					left: -30px;
+					transform: rotate(180deg);
+				}
+				
+				&:nth-child(6),
+				&:nth-child(3) {
+					&:before {
+						left: 0;
+						right: 0;
+						top: initial;
+						bottom: -40px;
+						transform: rotate(90deg); 
+					}
+				}
+				&:nth-child(4) { order: 4 }
+				&:nth-child(5) { order: 3 }
+				&:nth-child(6) { order: 2 }
+				&:nth-child(7) { order: 4 }
+				&:nth-child(8) { order: 5 }
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#what-should-be-done {
+		.list-of-figures {
+			li {
+				&:nth-child(1):before,
+				&:nth-child(5):before {
+					top: 0;
+					bottom: 0;
+					left: initial;
+					right: -30px;
+					transform: initial;
+				}
+				&:nth-child(3):before,
+				&:nth-child(7):before {
+					top: 0;
+					bottom: 0;
+					right: initial;
+					left: -30px;
+					transform: rotate(180deg);
+				}
+
+				&:nth-child(3) { order: 2; }
+				&:nth-child(4) { order: 1; }
+				&:nth-child(5) { order: 3; }
+				&:nth-child(6) { order: 4; }
+				&:nth-child(7) { order: 6; }
+				&:nth-child(8) { order: 5; }
 			}
 		}
 	}
@@ -229,40 +311,26 @@ section {
 			}
 		}
 	}
-	#what-should-be-done {
-		.list-of-figures {
-			li {
-				&:before {
-					left: initial;
-					right: -30px;
-					top: 0;
-					bottom: 0;
-					transform: initial;
-				}
-				&:nth-child(4) {
-					.figure-caption {
-						font-size: .9275rem;
-					}
-				}
-				&:nth-child(n+5):before {
-					right: initial;
-					left: -30px;
-					transform: rotate(180deg);
-				}
-
-				&:nth-child(4) { order: 3 }
-				&:nth-child(5) { order: 2 }
-				&:nth-child(6) { order: 3 }
-				&:nth-child(7) { order: 4 }
-				&:nth-child(8) { order: 5 }
-			}
-		}
-	}
 }
 
 @media (max-width: 767px) {
-	.card {
-		margin: .625rem;
+	.list-of-figures {
+		.figure {
+			flex-direction: row;
+			justify-content: flex-start;
+			padding: 1rem;
+			text-align: left;
+			[data-icon] {
+				min-width: 60px;
+				margin-right: 2rem;
+				margin-bottom: 0;
+			}
+			.figure-caption {
+				br {
+					display: none;
+				}
+			}
+		}
 	}
 }
 

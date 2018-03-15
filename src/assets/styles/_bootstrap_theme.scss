@@ -1,5 +1,10 @@
 @import "bootstrap";
 
+::selection {
+	background-color: $yellow;
+	color: #fff;
+}
+
 h1 {
 	margin-bottom: 4.125rem;
 	font-weight: 400;
@@ -76,6 +81,7 @@ ul.row {
 	align-items: center;
 	height: 100%;
 	text-align: center;
+	background-color: #fefefe;
 	border: 1px solid #efefef;
 	padding: 20px;
 	border-radius: 3px;
@@ -91,6 +97,7 @@ ul.row {
 }
 
 @media (min-width: 768px) {
+
 }
 
 @media (max-width: 767px) {
@@ -103,5 +110,9 @@ ul.row {
 	}
 	h3 {
 		font-size: 1.6rem;
+	}
+
+	.card {
+		margin: .625rem;
 	}
 }
