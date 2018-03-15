@@ -68,26 +68,35 @@ section {
 		background-size: 
 			100px,
 			80px,
-			160px,
-			220px,
-
-			110px,
 			120px,
-			160px,
-			180px;
-		background-position:
-			-100% -5%,
-			-120% 20%,
-			-140% 50%,
-			-160% 125%,
+			200px,
 
-			160% 5%,
-			180% 50%, 
-			200% 80%,
-			220% 110%;
+			100px,
+			100px,
+			140px,
+			150px;
+		background-position:
+			10% -58%,
+			-40% -50%,
+			-84% 40%,
+			-5% 155%,
+
+			98% -110%,
+			192% 50%, 
+			159% 80%,
+			96% 150%;
 		background-repeat: no-repeat;
 		transition: 1s;
 		animation: coinLight 12s infinite;
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
 	}
 }
 
@@ -341,7 +350,7 @@ section {
 }
 
 @media (min-width: 1440px) {
-	.bg-dark {
+	#owners-of-bookstores.bg-dark.aos-animate {
 		&:before {
 			background-size: 
 				100px,
@@ -365,7 +374,7 @@ section {
 				96% 110%;
 		}
 	}
-	#simple-solution.bg-dark {
+	#simple-solution.bg-dark.aos-animate {
 		&:before {
 			background-size: 
 				100px,
@@ -389,7 +398,7 @@ section {
 				120% 105%;
 		}
 	}
-	#offer-is-limited.bg-dark {
+	#offer-is-limited.bg-dark.aos-animate {
 		&:before {
 			background-size: 
 				100px,
