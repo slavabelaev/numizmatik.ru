@@ -116,3 +116,12 @@
 		white-space: nowrap;
 	}
 }
+
+@media (max-width: 574px) {
+	.logo {
+		min-width: 100%;
+	}
+	.contacts .telephones a {
+		flex: 100%;
+	}
+}
