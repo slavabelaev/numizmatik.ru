@@ -478,6 +478,15 @@ section {
 }
 
 @media (max-width: 767px) {
+	#what-should-be-done {
+		.list-of-figures {
+			li {
+				.figure {
+					padding: 2rem 1rem;
+				}
+			}
+		}
+	}
 	.list-of-figures {
 		li {
 			margin-bottom: 1rem;
@@ -486,7 +495,6 @@ section {
 			flex-direction: row;
 			justify-content: flex-start;
 			padding: 1rem;
-			margin-bottom: 0;
 			text-align: left;
 			[data-icon] {
 				min-width: 60px;

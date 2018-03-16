@@ -15,5 +15,8 @@ body.d-none {
 .list-of-figures {
 	li {
 		margin-bottom: 1.25rem;
+		.figure {
+			margin-bottom: 0;
+		}
 	}
 }
