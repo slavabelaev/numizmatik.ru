@@ -11,6 +11,8 @@ section {
 	}
 
 	&>.container {
+		position: relative;
+		z-index: 5;
 		&>header {
 			margin-bottom: 55px;
 		}
@@ -325,30 +327,6 @@ section {
 	}
 }
 
-@media (max-width: 767px) {
-	.list-of-figures {
-		li[data-aos] {
-			animation: none!important;
-		}
-		.figure {
-			flex-direction: row;
-			justify-content: flex-start;
-			padding: 1rem;
-			text-align: left;
-			[data-icon] {
-				min-width: 60px;
-				margin-right: 2rem;
-				margin-bottom: 0;
-			}
-			.figure-caption {
-				br {
-					display: none;
-				}
-			}
-		}
-	}
-}
-
 @media (min-width: 1440px) {
 	#owners-of-bookstores.bg-dark.aos-animate {
 		&:before {
@@ -495,6 +473,30 @@ section {
 				85% 40%, 
 				98% 10%,
 				102% 108%;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.list-of-figures {
+		li {
+			margin-bottom: 1rem;
+		}
+		.figure {
+			flex-direction: row;
+			justify-content: flex-start;
+			padding: 1rem;
+			text-align: left;
+			[data-icon] {
+				min-width: 60px;
+				margin-right: 2rem;
+				margin-bottom: 0;
+			}
+			.figure-caption {
+				br {
+					display: none;
+				}
+			}
 		}
 	}
 }
