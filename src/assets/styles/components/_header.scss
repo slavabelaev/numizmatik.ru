@@ -29,6 +29,20 @@
 			white-space: nowrap;
 		}
 	}
+
+	.social-icons {
+		padding-left: 1rem;
+		margin-top: -.2rem;
+		a {
+			margin-bottom: .1rem;
+			[data-icon] {
+				border: initial;
+				min-width: initial;
+				min-height: initial;
+				margin-right: 0;
+			}
+		}
+	}
 }
 
 .list-of-contacts {
@@ -80,7 +94,13 @@
 
 }
 
-@media (min-width: 576px) and (max-width: 991px) {
+@media (min-width: 575px) and (max-width: 1200px) {
+	.contacts .social-icons {
+		display: none;
+	}
+}
+
+@media (min-width: 575px) and (max-width: 991px) {
 	.logo {
 		flex-direction: row;
 		margin-right: 0;
