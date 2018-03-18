@@ -103,9 +103,16 @@ section {
 }
 
 #owners-of-bookstores {
-	background-image: url(../../images/pages/index/backgrounds/owners-of-bookstores.png);
-	background-size: cover;
-	background-position: center;
+	&:after {
+		background-image: url(../../images/pages/index/backgrounds/owners-of-bookstores.png);
+		background-size: cover;
+		background-position: center;
+		opacity: 0;
+		transition: .7s ease;
+	}
+	&.aos-animate:after {
+		opacity: 1;
+	}
 }
 
 #remember {
