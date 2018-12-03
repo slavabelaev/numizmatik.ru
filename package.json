@@ -1,7 +1,17 @@
 {
-  "name": "bingo",
+  "name": "numizmatik.ru",
   "version": "1.0.0",
-  "description": "",
+  "description": "Landing for «Numizmat Club»",
+  "homepage": "https://belaevslava.github.io/numizmatik.ru/build/index.html",
+  "previews": {
+    "directory": "previews",
+    "images": [
+      {
+        "path": "index.png",
+        "title": "Numizmat Club"
+      },
+    ]
+  },
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
