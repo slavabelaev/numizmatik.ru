@@ -9,7 +9,7 @@
       {
         "path": "index.png",
         "title": "Numizmat Club"
-      },
+      }
     ]
   },
   "main": "gulpfile.js",
